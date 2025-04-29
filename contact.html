@@ -3,58 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pretty Mush - Coming Soon</title>
-
+    <title>Order Now - Pretty Mush</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
-        body {
-          background-color: #f7f4ef; /* Soft sand color */
-          color: #333; /* Dark text */
-          font-family: 'Poppins', sans-serif;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 100vh;
-          margin: 0;
-          flex-direction: column;
+        .order-container {
+          max-width: 600px;
+          margin: 50px auto;
+          padding: 20px;
+          background: #f3f3f3;
+          border-radius: 8px;
+        }
+        .order-container h2 {
           text-align: center;
         }
-
-        h1 {
-          font-size: 48px;
-          margin-bottom: 20px;
-          color: #356859; /* Dark green */
+        .order-container label {
+          display: block;
+          margin-top: 10px;
         }
-
-        p {
-          font-size: 18px;
-          margin-bottom: 30px;
-          color: #555;
+        .order-container input, .order-container select {
+          width: 100%;
+          padding: 10px;
+          margin-top: 5px;
         }
-
-        .logo {
-          max-width: 200px;
-          margin-bottom: 40px;
-        }
-
-        .footer {
-          position: absolute;
-          bottom: 20px;
-          font-size: 14px;
-          color: #777;
+        .order-container button {
+          margin-top: 15px;
+          padding: 12px 20px;
+          background-color: #25D366;
+          color: white;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          font-size: 16px;
+          border-radius: 5px;
         }
     </style>
 </head>
-
 <body>
 
-<img src="logo.png" alt="Pretty Mush Logo" class="logo"> <!-- Update with your logo file name -->
+<div class="order-container">
+    <h2>Order Now</h2>
+    <form id="orderForm">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" required>
 
-<h1>Coming Soon</h1>
-<p>Pretty Fresh, Pretty Healthy — Stay Tuned!</p>
+        <label for="product">Product</label>
+        <select id="product" required>
+            <option value="Button Mushroom">Button Mushroom</option>
+        </select>
 
-<div class="footer">
-    © 2025 Pretty Mush, 8/75, Mulligoor Village and Post, The Nilgiris 643209
+        <label for="quantity">Quantity (in multiples of 200g)</label>
+        <input type="number" id="quantity" min="1" step="1" value="1" required>
+
+        <button type="submit">Order via WhatsApp</button>
+    </form>
 </div>
+
+<script>
+    document.getElementById("orderForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value;
+      const product = document.getElementById("product").value;
+      const quantityMultiplier = document.getElementById("quantity").value;
+      const totalQuantity = 200 * quantityMultiplier;
+
+      const message = `Hi, I would like to order:\\n\\nName: ${name}\\nProduct: ${product}\\nQuantity: ${totalQuantity} grams`;
+      const phoneNumber = "919677770947"; // Replace with your WhatsApp number
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+      window.open(whatsappURL, '_blank');
+    });
+</script>
 
 </body>
 </html>
