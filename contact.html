@@ -418,6 +418,74 @@
                 font-size: 2rem;
             }
         }
+    .order-container {
+        flex: 1;
+        min-width: 250px;
+        border: 1px solid #dee2e6;
+        border-radius: var(--border-radius);
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        padding: 20px;
+    }
+
+    .order-container:hover {
+      transform: translateY(-5px);
+    }
+
+    .order-container h2 {
+      text-align: center;
+      color: #2b5329;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    input, select {
+      width: 50%;
+      padding: 12px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: border-color 0.3s;
+
+    }
+
+    input:focus, select:focus {
+      border-color: #25D366;
+      outline: none;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 50%;
+      padding: 14px;
+      background-color: #25D366;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-bottom: 20px;
+    }
+
+    button:hover {
+      background-color: #1da851;
+    }
+
+    @media (max-width: 600px) {
+      .order-container {
+        margin: 10% 20px;
+        padding: 25px 20px;
+      }
+    }
     </style>
 </head>
 <body>
@@ -433,7 +501,7 @@
 <!--                    <li><a href="identification.html">Identification</a></li>-->
 <!--                    <li><a href="shop.html">Shop</a></li>-->
 <!--                    <li><a href="community.html">Community</a></li>-->
-                    <li><a href="contact.html" class="active">Contact</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -556,20 +624,39 @@
 
             <div class="product-card">
                 <div class="product-image">
-                    <img src="images/products/button-mushrooms-1.jpg" alt="Button Mushrooms">
+                    <img src="images/products/mushroom-bulk.jpg" alt="Button Mushrooms">
                 </div>
                 <div class="product-info">
                     <h3>Button Mushrooms</h3>
                     <p>Fresh, button mushrooms with rich, earthy flavor.</p>
                     <span class="product-price">Rs.50/200gms</span>
-                    <a href="https://wa.me/8668021135?text=I'd%20like%20to%20order%20Button%20Mushrooms%20at%20Rs.50/200gms" class="whatsapp-btn" target="_blank">
-                        <i class="fab fa-whatsapp"></i> Order Now
-                    </a>
+<!--                    <a href="https://wa.me/8668021135?text=I'd%20like%20to%20order%20Button%20Mushrooms%20at%20Rs.50/200gms" class="whatsapp-btn" target="_blank">-->
+<!--                        <i class="fab fa-whatsapp"></i> Order Now-->
+<!--                    </a>-->
                 </div>
             </div>
         </div>
 
-        <p>For custom orders or bulk purchases, please contact us directly:</p>
+    <div class="order-container">
+        <h2>Place Your Order</h2>
+        <form id="orderForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" required />
+
+            <label for="product">Product</label>
+            <select id="product" required>
+                <option value="Button Mushroom">Button Mushroom</option>
+            </select>
+
+            <label for="quantity">Quantity (Multiples of 200g)</label>
+            <input type="number" id="quantity" min="1" step="1" value="1" required />
+
+            <button type="submit">Order via WhatsApp</button>
+        </form>
+    </div>
+
+
+    <p>For custom orders or bulk purchases, please contact us directly:</p>
         <a href="https://wa.me/8668021135" class="btn" target="_blank" style="background-color: #25D366;">
             <i class="fab fa-whatsapp"></i> Chat with Us on WhatsApp
         </a>
@@ -606,25 +693,25 @@
                 </ul>
             </div>
 
-            <div class="footer-column">
-                <h3>Resources</h3>
-                <ul>
-                    <li><a href="guide.html">Beginner's Guide</a></li>
-                    <li><a href="safety.html">Safety Tips</a></li>
-                    <li><a href="recipes.html">Mushroom Recipes</a></li>
-                    <li><a href="cultivation.html">Cultivation Techniques</a></li>
-                    <li><a href="faq.html">FAQ</a></li>
-                </ul>
-            </div>
+<!--            <div class="footer-column">-->
+<!--                <h3>Resources</h3>-->
+<!--                <ul>-->
+<!--                    <li><a href="guide.html">Beginner's Guide</a></li>-->
+<!--                    <li><a href="safety.html">Safety Tips</a></li>-->
+<!--                    <li><a href="recipes.html">Mushroom Recipes</a></li>-->
+<!--                    <li><a href="cultivation.html">Cultivation Techniques</a></li>-->
+<!--                    <li><a href="faq.html">FAQ</a></li>-->
+<!--                </ul>-->
+<!--            </div>-->
 
-            <div class="footer-column">
-                <h3>Newsletter</h3>
-                <p>Subscribe to our newsletter for the latest updates and mushroom news.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Your Email Address" class="form-control" style="margin-bottom: 10px;" required>
-                    <button type="submit" class="btn" style="width: 100%;">Subscribe</button>
-                </form>
-            </div>
+<!--            <div class="footer-column">-->
+<!--                <h3>Newsletter</h3>-->
+<!--                <p>Subscribe to our newsletter for the latest updates and mushroom news.</p>-->
+<!--                <form class="newsletter-form">-->
+<!--                    <input type="email" placeholder="Your Email Address" class="form-control" style="margin-bottom: 10px;" required>-->
+<!--                    <button type="submit" class="btn" style="width: 100%;">Subscribe</button>-->
+<!--                </form>-->
+<!--            </div>-->
         </div>
 
         <div class="copyright">

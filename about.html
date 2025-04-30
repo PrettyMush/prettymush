@@ -2,59 +2,227 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pretty Mush - Coming Soon</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Pretty Mush</title>
     <style>
         body {
-          background-color: #f7f4ef; /* Soft sand color */
-          color: #333; /* Dark text */
-          font-family: 'Poppins', sans-serif;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          height: 100vh;
-          margin: 0;
-          flex-direction: column;
-          text-align: center;
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #453832;
+            background-color: #f8f5f1;
+            margin: 0;
+            padding: 0;
         }
-
-        h1 {
-          font-size: 48px;
-          margin-bottom: 20px;
-          color: #356859; /* Dark green */
+        header {
+            background-color: #95765c;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-
-        p {
-          font-size: 18px;
-          margin-bottom: 30px;
-          color: #555;
+        nav {
+            background-color: #6d4c41;
+            padding: 1rem 0;
+            text-align: center;
         }
-
-        .logo {
-          max-width: 200px;
-          margin-bottom: 40px;
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s;
         }
-
-        .footer {
-          position: absolute;
-          bottom: 20px;
-          font-size: 14px;
-          color: #777;
+        nav a:hover {
+            color: #ffd8be;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        h1, h2, h3 {
+            color: #6d4c41;
+        }
+        .about-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        .about-image img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .team-section {
+            margin-top: 3rem;
+        }
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+        .team-member {
+            flex: 1;
+            min-width: 250px;
+            background-color: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 1rem;
+        }
+        .values-section {
+            margin-top: 3rem;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+        .values {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 1.5rem;
+        }
+        .value {
+            flex: 1;
+            min-width: 200px;
+            padding: 1rem;
+            background-color: #f0e8e0;
+            border-radius: 8px;
+            text-align: center;
+        }
+        footer {
+            background-color: #6d4c41;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+        }
+        footer a {
+            color: #ffd8be;
         }
     </style>
 </head>
-
 <body>
+<header>
+    <h1>Pretty Mush</h1>
+    <p>Nature's Bounty in Every Jar</p>
+</header>
 
-<img src="logo.png" alt="Pretty Mush Logo" class="logo"> <!-- Update with your logo file name -->
+<nav>
+    <a href="index.html">Home</a>
+<!--    <a href="about.html">About</a>-->
+<!--    <a href="products.html">Products</a>-->
+<!--    <a href="recipes.html">Recipes</a>-->
+    <a href="contact.html">Contact</a>
+</nav>
 
-<h1>Coming Soon</h1>
-<p>Pretty Fresh, Pretty Healthy — Stay Tuned!</p>
+<div class="container">
+    <h2>About Pretty Mush</h2>
 
-<div class="footer">
-    © 2025 Pretty Mush, 8/75, Mulligoor Village and Post, The Nilgiris 643209
+    <div class="about-section">
+        <div class="about-text">
+            <p>Welcome to Pretty Mush, where we celebrate the beauty, flavor, and nutritional benefits of mushrooms. Founded in 2025, we began our journey with a simple mission: to share our passion for fungi with the world.</p>
+
+            <p>Our company was born from a deep appreciation for the diverse ecosystem of mushrooms and their incredible potential as sustainable, nutritious food sources. What started as a small foraging hobby has blossomed into a thriving business dedicated to creating premium mushroom products that are as delicious as they are beneficial.</p>
+
+            <p>At Pretty Mush, we work directly with local foragers and cultivators who share our commitment to sustainable harvesting practices. Every mushroom in our products is carefully selected for its quality, flavor profile, and nutritional value.</p>
+        </div>
+
+<!--        <div class="about-image">-->
+<!--            <img src="/api/placeholder/400/320" alt="Assorted fresh mushrooms in a wooden basket">-->
+<!--        </div>-->
+    </div>
+
+    <div class="values-section">
+        <h2>Our Values</h2>
+        <div class="values">
+            <div class="value">
+                <h3>Sustainability</h3>
+                <p>We are committed to environmentally responsible practices in every aspect of our business, from harvesting to packaging.</p>
+            </div>
+            <div class="value">
+                <h3>Quality</h3>
+                <p>We never compromise on the quality of our mushrooms or ingredients, ensuring every product meets our high standards.</p>
+            </div>
+            <div class="value">
+                <h3>Education</h3>
+                <p>We believe in sharing knowledge about fungi and their importance in our ecosystem and diets.</p>
+            </div>
+            <div class="value">
+                <h3>Community</h3>
+                <p>We support local foragers, farmers, and the mycological community through fair partnerships and outreach programs.</p>
+            </div>
+        </div>
+    </div>
+
+<!--    <div class="team-section">-->
+<!--        <h2>Meet Our Team</h2>-->
+<!--        <div class="team-members">-->
+<!--            <div class="team-member">-->
+<!--                <img src="/api/placeholder/150/150" alt="Elena Morgan, Founder">-->
+<!--                <h3>Elena Morgan</h3>-->
+<!--                <p><strong>Founder & Mycologist</strong></p>-->
+<!--                <p>Elena's fascination with fungi began during her childhood foraging trips in the Pacific Northwest. With a background in mycology and sustainable agriculture, she founded Pretty Mush to share her passion with the world.</p>-->
+<!--            </div>-->
+
+<!--            <div class="team-member">-->
+<!--                <img src="/api/placeholder/150/150" alt="Marcus Chen, Head Chef">-->
+<!--                <h3>Marcus Chen</h3>-->
+<!--                <p><strong>Head Chef & Product Developer</strong></p>-->
+<!--                <p>A culinary expert with over 15 years of experience, Marcus creates our innovative recipes and ensures that every Pretty Mush product is as delightful to the palate as it is nourishing to the body.</p>-->
+<!--            </div>-->
+
+<!--            <div class="team-member">-->
+<!--                <img src="/api/placeholder/150/150" alt="Priya Sharma, Sustainability Director">-->
+<!--                <h3>Priya Sharma</h3>-->
+<!--                <p><strong>Sustainability Director</strong></p>-->
+<!--                <p>With a doctorate in Environmental Science, Priya oversees our sustainability initiatives and ensures that our harvesting practices contribute positively to forest ecosystems.</p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <div class="about-section">
+<!--        <div class="about-image">-->
+<!--            <img src="/api/placeholder/400/320" alt="Pretty Mush production facility with workers carefully preparing mushrooms">-->
+<!--        </div>-->
+
+        <div class="about-text">
+            <h2>Our Process</h2>
+            <p>From forest to jar, we maintain strict quality control at every stage. Our mushrooms are hand-selected, carefully cleaned, and processed within hours of harvesting to preserve their nutritional profile and flavor.</p>
+
+            <p>We use traditional preservation methods alongside modern techniques to create products that honor the natural characteristics of each mushroom variety. Our small-batch approach ensures attention to detail that you can taste in every bite.</p>
+
+            <p>Our facility is certified organic, and we prioritize minimal environmental impact through renewable energy use, water conservation, and compostable packaging whenever possible.</p>
+        </div>
+    </div>
 </div>
 
+<footer>
+    <p>&copy; 2025 Pretty Mush. All Rights Reserved.</p>
+    <p>
+<!--        <a href="privacy.html">Privacy Policy</a> |-->
+<!--        <a href="terms.html">Terms of Service</a> |-->
+        <a href="contact.html">Contact Us</a>
+    </p>
+</footer>
 </body>
 </html>
