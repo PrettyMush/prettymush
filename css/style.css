@@ -191,6 +191,13 @@ section {
     width: auto;
 }
 
+.brand-name {
+    color: var(--primary);
+    font-family: 'Lora';
+    font-size: 5rem;
+    margin-left: 10rem;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
