@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page Not Found - Pretty Mush - The page you're looking for doesn't exist. Explore our fresh button mushrooms and products.">
+    <title>Page Not Found - Pretty Mush</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+        .error-container {
+            min-height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: var(--spacing-lg) 0;
+        }
+        
+        .error-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .error-number {
+            font-size: 12rem;
+            font-weight: 900;
+            color: var(--primary);
+            margin-bottom: var(--spacing-md);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .error-title {
+            font-size: 3rem;
+            color: var(--text-dark);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .error-message {
+            font-size: 1.8rem;
+            color: var(--gray-dark);
+            margin-bottom: var(--spacing-lg);
+            line-height: 1.6;
+        }
+        
+        .search-section {
+            background-color: var(--text-light);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .search-form {
+            display: flex;
+            gap: var(--spacing-sm);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .search-input {
+            flex: 1;
+            padding: 1.2rem;
+            border: 1px solid var(--gray-medium);
+            border-radius: var(--border-radius);
+            font-size: 1.6rem;
+        }
+        
+        .search-btn {
+            background-color: var(--primary);
+            color: var(--text-light);
+            border: none;
+            padding: 1.2rem 2rem;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .search-btn:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        .helpful-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        .helpful-card {
+            background-color: var(--text-light);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            transition: var(--transition);
+        }
+        
+        .helpful-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .helpful-card i {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .helpful-card h3 {
+            color: var(--text-dark);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .helpful-card p {
+            color: var(--gray-dark);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .error-mushroom {
+            font-size: 8rem;
+            color: var(--secondary);
+            margin-bottom: var(--spacing-md);
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        @media (max-width: 768px) {
+            .error-number {
+                font-size: 8rem;
+            }
+            
+            .error-title {
+                font-size: 2.4rem;
+            }
+            
+            .error-message {
+                font-size: 1.6rem;
+            }
+            
+            .search-form {
+                flex-direction: column;
+            }
+            
+            .helpful-links {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Header Section -->
+<header class="site-header">
+    <div class="container">
+        <nav class="main-nav">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Pretty Mush Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Error Content Section -->
+<section class="error-container">
+    <div class="container">
+        <div class="error-content">
+            <div class="error-mushroom">
+                <i class="fas fa-mushroom"></i>
+            </div>
+            <div class="error-number">404</div>
+            <h1 class="error-title">Oops! This Page Got Lost</h1>
+            <p class="error-message">The page you're looking for seems to have wandered off into the forest. Don't worry, we'll help you find your way back to our fresh mushroom paradise!</p>
+            
+            <!-- Search Section -->
+            <div class="search-section">
+                <h3>Try searching for what you need:</h3>
+                <form class="search-form" onsubmit="performSearch(event)">
+                    <input type="text" class="search-input" placeholder="Search for mushrooms, products, or information..." aria-label="Search">
+                    <button type="submit" class="search-btn">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </form>
+            </div>
+            
+            <!-- Helpful Links -->
+            <div class="helpful-links">
+                <div class="helpful-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Back to Home</h3>
+                    <p>Return to our main page and discover our fresh mushroom products</p>
+                    <a href="index.html" class="btn btn-primary">Visit Home</a>
+                </div>
+                
+                <div class="helpful-card">
+                    <i class="fas fa-info-circle"></i>
+                    <h3>About Us</h3>
+                    <p>Learn about our mushroom farm in the beautiful hills of Ooty</p>
+                    <a href="about.html" class="btn btn-secondary">Learn More</a>
+                </div>
+                
+                <div class="helpful-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Contact Us</h3>
+                    <p>Get in touch with us for orders or any questions</p>
+                    <a href="contact.html" class="btn btn-primary">Contact Now</a>
+                </div>
+                
+                <div class="helpful-card">
+                    <i class="fas fa-box"></i>
+                    <h3>Our Products</h3>
+                    <p>Explore our fresh button mushrooms and bulk options</p>
+                    <a href="index.html#product-preview" class="btn btn-secondary">View Products</a>
+                </div>
+            </div>
+            
+            <!-- Popular Categories -->
+            <div class="section-header">
+                <h2>Popular Pages</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="popular-links">
+                <div class="link-buttons">
+                    <a href="cancellation-refunds.html" class="btn btn-nav">Cancellation & Refunds</a>
+                    <a href="shipping.html" class="btn btn-nav">Shipping Information</a>
+                    <a href="privacy.html" class="btn btn-nav">Privacy Policy</a>
+                    <a href="terms-conditions.html" class="btn btn-nav">Terms & Conditions</a>
+                </div>
+            </div>
+            
+            <!-- Call to Action -->
+            <div class="section-cta">
+                <h3>Still need help?</h3>
+                <p>Our team is here to assist you. Contact us directly and we'll be happy to help you find what you're looking for!</p>
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn btn-primary">Contact Support</a>
+                    <a href="https://wa.me/918668021135" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Helpful Information Section -->
+<section class="features">
+    <div class="container">
+        <div class="section-header">
+            <h2>Quick Navigation</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3>Fresh Products</h3>
+                <p>Discover our premium button mushrooms grown in the pristine environment of Ooty</p>
+                <a href="index.html" class="btn btn-secondary">Explore Products</a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-mountain"></i>
+                </div>
+                <h3>Our Farm</h3>
+                <p>Learn about our sustainable cultivation practices in the Nilgiri Hills</p>
+                <a href="about.html" class="btn btn-secondary">Visit Farm</a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-truck"></i>
+                </div>
+                <h3>Delivery Info</h3>
+                <p>Get details about our fresh delivery service across Tamil Nadu</p>
+                <a href="shipping.html" class="btn btn-secondary">Shipping Details</a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Policies</h3>
+                <p>Read our terms, privacy policy, and customer satisfaction guarantees</p>
+                <a href="terms-conditions.html" class="btn btn-secondary">View Policies</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <img src="images/logo.png" alt="Pretty Mush Logo" class="footer-logo">
+                <p>Pretty Fresh, Pretty Healthy</p>
+                <p>Growing premium button mushrooms in the pristine environment of Ooty, Tamil Nadu.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> prettymush2025@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> +91 86680 21135</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 8/75, Mulligoor Village, The Nilgiris, Tamil Nadu, India</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61575984058804" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/prettymush_ooty/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@prettymush_ooty" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Pretty Mush. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
+<script>
+    function performSearch(event) {
+        event.preventDefault();
+        const searchTerm = event.target.querySelector('.search-input').value.trim();
+        
+        if (searchTerm) {
+            // Simple search simulation - in a real implementation, this would search your content
+            if (searchTerm.toLowerCase().includes('mushroom') || searchTerm.toLowerCase().includes('product')) {
+                window.location.href = 'index.html#product-preview';
+            } else if (searchTerm.toLowerCase().includes('contact') || searchTerm.toLowerCase().includes('phone') || searchTerm.toLowerCase().includes('email')) {
+                window.location.href = 'contact.html';
+            } else if (searchTerm.toLowerCase().includes('about') || searchTerm.toLowerCase().includes('farm') || searchTerm.toLowerCase().includes('story')) {
+                window.location.href = 'about.html';
+            } else {
+                // Default to home page with search highlight
+                window.location.href = 'index.html';
+            }
+        } else {
+            // If no search term, redirect to home
+            window.location.href = 'index.html';
+        }
+    }
+    
+    // Add some interactivity to the error page
+    document.addEventListener('DOMContentLoaded', function() {
+        // Add click events to helpful cards
+        const helpfulCards = document.querySelectorAll('.helpful-card');
+        helpfulCards.forEach(card => {
+            card.addEventListener('click', function(e) {
+                if (e.target.tagName !== 'A') {
+                    const link = this.querySelector('a');
+                    if (link) {
+                        window.location.href = link.href;
+                    }
+                }
+            });
+        });
+        
+        // Add a fun mushroom animation on page load
+        setTimeout(() => {
+            const mushroom = document.querySelector('.error-mushroom');
+            if (mushroom) {
+                mushroom.style.animation = 'float 3s ease-in-out infinite, spin 6s linear infinite';
+            }
+        }, 1000);
+    });
+</script>
+</body>
+</html>
