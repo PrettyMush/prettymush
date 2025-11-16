@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy - Pretty Mush - Learn how we protect and handle your personal information, cookies, and data privacy practices.">
+    <title>Privacy Policy - Pretty Mush</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+        .privacy-section {
+            background-color: var(--text-light);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .privacy-section h3 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: var(--spacing-xs);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: var(--spacing-sm) 0;
+            background-color: var(--accent);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+        
+        .data-table th,
+        .data-table td {
+            padding: 1.2rem;
+            text-align: left;
+            border-bottom: 1px solid var(--gray-medium);
+        }
+        
+        .data-table th {
+            background-color: var(--primary);
+            color: var(--text-light);
+            font-weight: 600;
+        }
+        
+        .data-table tr:hover {
+            background-color: var(--accent-dark);
+        }
+        
+        .consent-banner {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--text-light);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            margin: var(--spacing-md) 0;
+            text-align: center;
+        }
+        
+        .cookie-info {
+            background-color: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+        }
+        
+        .user-rights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-md);
+            margin: var(--spacing-lg) 0;
+        }
+        
+        .right-card {
+            background-color: var(--accent);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            text-align: center;
+            border: 2px solid var(--secondary);
+        }
+        
+        .right-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .security-badge {
+            display: inline-flex;
+            align-items: center;
+            background-color: #e8f5e8;
+            color: var(--primary-dark);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            margin: var(--spacing-xs);
+        }
+        
+        .security-badge i {
+            margin-right: var(--spacing-xs);
+        }
+        
+        .contact-privacy {
+            background-color: var(--primary);
+            color: var(--text-light);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+            margin: var(--spacing-lg) 0;
+            text-align: center;
+        }
+        
+        .last-updated {
+            background-color: var(--accent-dark);
+            padding: var(--spacing-sm);
+            border-radius: var(--border-radius);
+            text-align: center;
+            font-weight: 600;
+            color: var(--primary-dark);
+            margin-bottom: var(--spacing-lg);
+        }
+        
+        @media (max-width: 768px) {
+            .user-rights {
+                grid-template-columns: 1fr;
+            }
+            
+            .data-table {
+                font-size: 1.4rem;
+            }
+            
+            .data-table th,
+            .data-table td {
+                padding: 0.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Header Section -->
+<header class="site-header">
+    <div class="container">
+        <nav class="main-nav">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Pretty Mush Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">Privacy Policy</h1>
+            <p class="hero-subtitle">Your privacy is important to us - learn how we protect your personal information</p>
+        </div>
+    </div>
+</section>
+
+<!-- Last Updated Section -->
+<section class="last-updated">
+    <div class="container">
+        <p><i class="fas fa-calendar-alt"></i> Last Updated: November 16, 2025</p>
+    </div>
+</section>
+
+<!-- Introduction Section -->
+<section class="introduction">
+    <div class="container">
+        <div class="intro-content">
+            <div class="section-header">
+                <h2>Privacy Commitment</h2>
+                <div class="section-divider"></div>
+            </div>
+            <p class="intro-text">At Pretty Mush, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, store, and protect your data when you use our website and services.</p>
+            <p class="intro-text">By using our services, you consent to the data practices described in this policy. We encourage you to read this policy carefully and contact us if you have any questions.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Data Collection Section -->
+<section class="features">
+    <div class="container">
+        <div class="section-header">
+            <h2>Information We Collect</h2>
+            <div class="section-divider"></div>
+        </div>
+        
+        <div class="privacy-section">
+            <h3><i class="fas fa-user"></i> Personal Information</h3>
+            <p>We collect personal information that you provide directly to us when you:</p>
+            <ul>
+                <li>Place an order for our mushroom products</li>
+                <li>Create an account on our website</li>
+                <li>Subscribe to our newsletter</li>
+                <li>Contact us for customer support</li>
+                <li>Participate in surveys or promotions</li>
+                <li>Visit our farm or attend events</li>
+            </ul>
+            <p>This information may include:</p>
+            <ul>
+                <li>Name, email address, phone number</li>
+                <li>Delivery address and billing information</li>
+                <li>Payment details (processed securely through third-party providers)</li>
+                <li>Communication preferences</li>
+                <li>Any other information you choose to provide</li>
+            </ul>
+        </div>
+        
+        <div class="privacy-section">
+            <h3><i class="fas fa-globe"></i> Automatically Collected Information</h3>
+            <p>When you visit our website, we automatically collect certain information about your device and usage, including:</p>
+            <ul>
+                <li>IP address and location data</li>
+                <li>Browser type and version</li>
+                <li>Pages visited and time spent on our site</li>
+                <li>Referring website or application</li>
+                <li>Device information (operating system, screen resolution, etc.)</li>
+            </ul>
+        </div>
+        
+        <div class="privacy-section">
+            <h3><i class="fas fa-cookie-bite"></i> Cookies and Tracking Technologies</h3>
+            <p>We use cookies and similar technologies to enhance your browsing experience and analyze website usage. These include:</p>
+            <ul>
+                <li><strong>Essential Cookies:</strong> Required for basic website functionality</li>
+                <li><strong>Analytics Cookies:</strong> Help us understand how visitors interact with our website</li>
+                <li><strong>Marketing Cookies:</strong> Used to deliver relevant advertisements and measure campaign effectiveness</li>
+                <li><strong>Preference Cookies:</strong> Remember your settings and preferences</li>
+            </ul>
+            <div class="cookie-info">
+                <h4><i class="fas fa-info-circle"></i> Managing Cookies</h4>
+                <p>You can control cookies through your browser settings. However, disabling certain cookies may affect website functionality.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Data Usage Section -->
+<section class="about-preview">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-content">
+                <div class="section-header left-aligned">
+                    <h2>How We Use Your Information</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="privacy-section">
+                    <h3><i class="fas fa-shopping-cart"></i> Order Processing and Fulfillment</h3>
+                    <p>We use your personal information to:</p>
+                    <ul>
+                        <li>Process and fulfill your mushroom orders</li>
+                        <li>Manage deliveries and shipping</li>
+                        <li>Handle customer service requests</li>
+                        <li>Process payments and prevent fraud</li>
+                        <li>Send order confirmations and updates</li>
+                    </ul>
+                </div>
+                
+                <div class="privacy-section">
+                    <h3><i class="fas fa-bullhorn"></i> Marketing and Communications</h3>
+                    <p>With your consent, we may use your information to:</p>
+                    <ul>
+                        <li>Send promotional offers and newsletters about our products</li>
+                        <li>Notify you about new products, seasonal availability, or special events</li>
+                        <li>Conduct market research and improve our services</li>
+                        <li>Personalize your shopping experience</li>
+                    </ul>
+                    <p>You can opt out of marketing communications at any time by clicking "unsubscribe" or contacting us directly.</p>
+                </div>
+                
+                <div class="privacy-section">
+                    <h3><i class="fas fa-chart-bar"></i> Business Operations</h3>
+                    <p>We use aggregated, non-identifying information to:</p>
+                    <ul>
+                        <li>Analyze website usage and improve functionality</li>
+                        <li>Monitor business performance and customer satisfaction</li>
+                        <li>Develop new products and services</li>
+                        <li>Ensure website security and prevent abuse</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Data Sharing Section -->
+<section class="contact-preview">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-content">
+                <div class="section-header left-aligned">
+                    <h2>Information Sharing and Disclosure</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <p>We do not sell, rent, or trade your personal information to third parties. We may share your information only in the following circumstances:</p>
+                
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Party</th>
+                            <th>Purpose</th>
+                            <th>Information Shared</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Service Providers</strong></td>
+                            <td>Delivery, payment processing, website hosting</td>
+                            <td>Order details, contact info, delivery address</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Legal Authorities</strong></td>
+                            <td>Compliance with law, legal processes</td>
+                            <td>As required by applicable law</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Business Transfers</strong></td>
+                            <td>Merger, acquisition, sale of assets</td>
+                            <td>Customer information as part of business transfer</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Consent</strong></td>
+                            <td>As otherwise disclosed to you</td>
+                            <td>Specific information you consent to share</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- User Rights Section -->
+<section class="product-preview">
+    <div class="container">
+        <div class="section-header">
+            <h2>Your Privacy Rights</h2>
+            <div class="section-divider"></div>
+        </div>
+        
+        <p style="text-align: center; margin-bottom: var(--spacing-lg);">You have several rights regarding your personal information:</p>
+        
+        <div class="user-rights">
+            <div class="right-card">
+                <div class="right-icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h3>Right to Access</h3>
+                <p>Request a copy of the personal information we hold about you</p>
+            </div>
+            
+            <div class="right-card">
+                <div class="right-icon">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <h3>Right to Rectification</h3>
+                <p>Request correction of inaccurate or incomplete information</p>
+            </div>
+            
+            <div class="right-card">
+                <div class="right-icon">
+                    <i class="fas fa-eraser"></i>
+                </div>
+                <h3>Right to Deletion</h3>
+                <p>Request deletion of your personal information (subject to legal obligations)</p>
+            </div>
+            
+            <div class="right-card">
+                <div class="right-icon">
+                    <i class="fas fa-stop-circle"></i>
+                </div>
+                <h3>Right to Restrict Processing</h3>
+                <p>Limit how we use your information</p>
+            </div>
+            
+            <div class="right-card">
+                <div class="right-icon">
+                    <i class="fas fa-download"></i>
+                </div>
+                <h3>Right to Data Portability</h3>
+                <p>Receive your data in a structured, machine-readable format</p>
+            </div>
+            
+            <div class="right-card">
+                <div class="right-icon">
+                    <i class="fas fa-ban"></i>
+                </div>
+                <h3>Right to Object</h3>
+                <p>Object to processing of your information for marketing purposes</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Data Security Section -->
+<section class="features">
+    <div class="container">
+        <div class="section-header">
+            <h2>Data Security</h2>
+            <div class="section-divider"></div>
+        </div>
+        
+        <div class="privacy-section">
+            <h3><i class="fas fa-shield-alt"></i> Security Measures</h3>
+            <p>We implement industry-standard security measures to protect your personal information:</p>
+            <ul>
+                <li><span class="security-badge"><i class="fas fa-lock"></i> SSL Encryption</span> All data transmission is encrypted using industry-standard SSL/TLS protocols</li>
+                <li><span class="security-badge"><i class="fas fa-server"></i> Secure Servers</span> Your data is stored on secure servers with access controls and monitoring</li>
+                <li><span class="security-badge"><i class="fas fa-key"></i> PCI Compliance</span> Payment processing follows PCI DSS standards for secure transactions</li>
+                <li><span class="security-badge"><i class="fas fa-user-shield"></i> Access Controls</span> Limited access to personal data on a need-to-know basis</li>
+                <li><span class="security-badge"><i class="fas fa-sync"></i> Regular Updates</span> Our security systems are regularly updated and monitored</li>
+            </ul>
+        </div>
+        
+        <div class="privacy-section">
+            <h3><i class="fas fa-exclamation-triangle"></i> Data Breach Response</h3>
+            <p>In the unlikely event of a data breach affecting your personal information, we will:</p>
+            <ul>
+                <li>Investigate the breach and contain the incident</li>
+                <li>Notify affected customers within 72 hours of discovery</li>
+                <li>Report the incident to relevant authorities as required by law</li>
+                <li>Take steps to prevent similar incidents in the future</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- Children's Privacy Section -->
+<section class="about-preview">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-content">
+                <div class="section-header left-aligned">
+                    <h2>Children's Privacy</h2>
+                    <div class="section-divider"></div>
+                </div>
+                <p>Our services are not directed to children under 18 years of age. We do not knowingly collect personal information from children. If we become aware that we have collected personal information from a child under 18, we will take steps to delete such information promptly.</p>
+                
+                <div class="consent-banner">
+                    <h3>Parental Guidance</h3>
+                    <p>If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately so we can take appropriate action.</p>
+                </div>
+                
+                <h3>International Data Transfers</h3>
+                <p>Your information may be transferred to and processed in countries other than your country of residence. We ensure appropriate safeguards are in place to protect your information during such transfers, including standard contractual clauses and adequate protection measures.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-privacy">
+    <div class="container">
+        <h2>Privacy Questions & Contact Information</h2>
+        <p>If you have questions about this Privacy Policy or want to exercise your privacy rights, please contact us:</p>
+        
+        <div class="contact-details" style="color: var(--text-light);">
+            <p><i class="fas fa-envelope"></i> <strong>Email:</strong> prettymush2025@gmail.com</p>
+            <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +91 86680 21135</p>
+            <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong> 8/75, Mulligoor Village, The Nilgiris, Tamil Nadu, India</p>
+        </div>
+        
+        <p style="margin-top: var(--spacing-md);">We will respond to your privacy inquiries within 30 days of receipt.</p>
+        
+        <div class="hero-buttons">
+            <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <img src="images/logo.png" alt="Pretty Mush Logo" class="footer-logo">
+                <p>Pretty Fresh, Pretty Healthy</p>
+                <p>Growing premium button mushrooms in the pristine environment of Ooty, Tamil Nadu.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> prettymush2025@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> +91 86680 21135</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 8/75, Mulligoor Village, The Nilgiris, Tamil Nadu, India</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61575984058804" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/prettymush_ooty/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@prettymush_ooty" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Pretty Mush. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
+</body>
+</html>

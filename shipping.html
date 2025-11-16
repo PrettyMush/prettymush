@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shipping Information - Pretty Mush - Learn about our fresh mushroom delivery service, shipping methods, timeframes, and tracking options from our Ooty farm.">
+    <title>Shipping Information - Pretty Mush</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+        .shipping-method {
+            background-color: var(--text-light);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+            margin-bottom: var(--spacing-md);
+        }
+        
+        .method-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .method-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-right: var(--spacing-sm);
+        }
+        
+        .method-details {
+            flex: 1;
+        }
+        
+        .method-title {
+            font-size: 2rem;
+            color: var(--text-dark);
+            margin: 0;
+        }
+        
+        .method-subtitle {
+            color: var(--gray-dark);
+            margin: 0;
+            font-size: 1.4rem;
+        }
+        
+        .delivery-timeline {
+            background: linear-gradient(135deg, var(--secondary), var(--primary));
+            color: var(--text-light);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            margin: var(--spacing-md) 0;
+            text-align: center;
+        }
+        
+        .timeline-header {
+            font-size: 2.4rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .timeline-subtitle {
+            font-size: 1.6rem;
+            opacity: 0.9;
+        }
+        
+        .shipping-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+            margin: var(--spacing-lg) 0;
+        }
+        
+        .shipping-zone {
+            background-color: var(--text-light);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-md);
+            text-align: center;
+        }
+        
+        .zone-name {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        .zone-details {
+            list-style: none;
+            text-align: left;
+        }
+        
+        .zone-details li {
+            margin-bottom: var(--spacing-xs);
+            display: flex;
+            align-items: center;
+        }
+        
+        .zone-details li i {
+            color: var(--secondary);
+            margin-right: var(--spacing-xs);
+        }
+        
+        .tracking-section {
+            background-color: var(--accent);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius);
+            margin: var(--spacing-lg) 0;
+        }
+        
+        .tracking-form {
+            display: flex;
+            gap: var(--spacing-sm);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .tracking-input {
+            flex: 1;
+            padding: 1.2rem;
+            border: 1px solid var(--gray-medium);
+            border-radius: var(--border-radius);
+            font-size: 1.6rem;
+        }
+        
+        .tracking-btn {
+            background-color: var(--primary);
+            color: var(--text-light);
+            border: none;
+            padding: 1.2rem 2rem;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .tracking-btn:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        .special-instructions {
+            background-color: #e8f5e8;
+            border-left: 4px solid var(--primary);
+            padding: var(--spacing-md);
+            margin: var(--spacing-md) 0;
+        }
+        
+        .freshness-guarantee {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--text-light);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius);
+            text-align: center;
+            margin: var(--spacing-lg) 0;
+        }
+        
+        .guarantee-icon {
+            font-size: 4rem;
+            margin-bottom: var(--spacing-sm);
+        }
+        
+        @media (max-width: 768px) {
+            .tracking-form {
+                flex-direction: column;
+            }
+            
+            .method-header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .method-icon {
+                margin-right: 0;
+                margin-bottom: var(--spacing-sm);
+            }
+        }
+    </style>
+</head>
+<body>
+<!-- Header Section -->
+<header class="site-header">
+    <div class="container">
+        <nav class="main-nav">
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Pretty Mush Logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">Shipping Information</h1>
+            <p class="hero-subtitle">Fast, fresh delivery from our Ooty farm to your table</p>
+        </div>
+    </div>
+</section>
+
+<!-- Delivery Timeline Section -->
+<section class="delivery-timeline">
+    <div class="container">
+        <h2 class="timeline-header">Farm Fresh Delivery</h2>
+        <p class="timeline-subtitle">From harvest to your home in 24-48 hours</p>
+    </div>
+</section>
+
+<!-- Shipping Methods Section -->
+<section class="introduction">
+    <div class="container">
+        <div class="intro-content">
+            <div class="section-header">
+                <h2>Shipping Methods</h2>
+                <div class="section-divider"></div>
+            </div>
+            
+            <div class="shipping-method">
+                <div class="method-header">
+                    <i class="fas fa-shipping-fast method-icon"></i>
+                    <div class="method-details">
+                        <h3 class="method-title">Express Delivery (Recommended)</h3>
+                        <p class="method-subtitle">Next-day delivery for maximum freshness</p>
+                    </div>
+                </div>
+                <p><strong>Delivery Time:</strong> Next business day (Orders placed before 2 PM)</p>
+                <p><strong>Coverage:</strong> Ooty, Coimbatore, Bangalore, Chennai metropolitan areas</p>
+                <p><strong>Cost:</strong> ₹50 for orders under ₹500 | Free for orders above ₹500</p>
+                <p><strong>Features:</strong> Temperature-controlled packaging, real-time tracking, preferred delivery time slots</p>
+            </div>
+            
+            <div class="shipping-method">
+                <div class="method-header">
+                    <i class="fas fa-truck method-icon"></i>
+                    <div class="method-details">
+                        <h3 class="method-title">Standard Delivery</h3>
+                        <p class="method-subtitle">Reliable 2-3 day delivery</p>
+                    </div>
+                </div>
+                <p><strong>Delivery Time:</strong> 2-3 business days</p>
+                <p><strong>Coverage:</strong> Major cities across Tamil Nadu and Karnataka</p>
+                <p><strong>Cost:</strong> ₹75 for orders under ₹500 | Free for orders above ₹1000</p>
+                <p><strong>Features:</strong> Insulated packaging, basic tracking, flexible delivery windows</p>
+            </div>
+            
+            <div class="shipping-method">
+                <div class="method-header">
+                    <i class="fas fa-store method-icon"></i>
+                    <div class="method-details">
+                        <h3 class="method-title">Farm Pickup</h3>
+                        <p class="method-subtitle">Come directly to our farm</p>
+                    </div>
+                </div>
+                <p><strong>Pickup Time:</strong> Monday to Saturday, 9:00 AM - 5:00 PM</p>
+                <p><strong>Location:</strong> 8/75, Mulligoor Village, The Nilgiris, Tamil Nadu</p>
+                <p><strong>Cost:</strong> Free (No delivery charges)</p>
+                <p><strong>Features:</strong> See our cultivation process, farm tour available, freshest possible product</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Delivery Zones Section -->
+<section class="features">
+    <div class="container">
+        <div class="section-header">
+            <h2>Delivery Zones & Pricing</h2>
+            <div class="section-divider"></div>
+        </div>
+        
+        <div class="shipping-grid">
+            <div class="shipping-zone">
+                <h3 class="zone-name">Zone 1: Local</h3>
+                <ul class="zone-details">
+                    <li><i class="fas fa-check"></i> Ooty, Coonoor, Kotagiri</li>
+                    <li><i class="fas fa-check"></i> Next-day delivery</li>
+                    <li><i class="fas fa-check"></i> Free delivery over ₹300</li>
+                    <li><i class="fas fa-check"></i> ₹25 standard delivery fee</li>
+                    <li><i class="fas fa-check"></i> Same-day pickup available</li>
+                </ul>
+            </div>
+            
+            <div class="shipping-zone">
+                <h3 class="zone-name">Zone 2: Regional</h3>
+                <ul class="zone-details">
+                    <li><i class="fas fa-check"></i> Coimbatore, Bangalore, Chennai</li>
+                    <li><i class="fas fa-check"></i> 1-2 day delivery</li>
+                    <li><i class="fas fa-check"></i> Free delivery over ₹500</li>
+                    <li><i class="fas fa-check"></i> ₹50 express delivery fee</li>
+                    <li><i class="fas fa-check"></i> Temperature-controlled shipping</li>
+                </ul>
+            </div>
+            
+            <div class="shipping-zone">
+                <h3 class="zone-name">Zone 3: Extended</h3>
+                <ul class="zone-details">
+                    <li><i class="fas fa-check"></i> Other Tamil Nadu cities</li>
+                    <li><i class="fas fa-check"></i> 2-3 day delivery</li>
+                    <li><i class="fas fa-check"></i> Free delivery over ₹750</li>
+                    <li><i class="fas fa-check"></i> ₹75 standard delivery fee</li>
+                    <li><i class="fas fa-check"></i> Limited express options</li>
+                </ul>
+            </div>
+            
+            <div class="shipping-zone">
+                <h3 class="zone-name">Zone 4: Bulk Orders</h3>
+                <ul class="zone-details">
+                    <li><i class="fas fa-check"></i> Restaurant & wholesale orders</li>
+                    <li><i class="fas fa-check"></i> Custom delivery schedule</li>
+                    <li><i class="fas fa-check"></i> Special pricing available</li>
+                    <li><i class="fas fa-check"></i> Dedicated account manager</li>
+                    <li><i class="fas fa-check"></i> Volume discounts</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Freshness Guarantee Section -->
+<section class="freshness-guarantee">
+    <div class="container">
+        <div class="guarantee-icon">
+            <i class="fas fa-leaf"></i>
+        </div>
+        <h2>Freshness Guarantee</h2>
+        <p>We guarantee your mushrooms will arrive fresh and at peak quality. If you're not satisfied with the freshness upon delivery, contact us within 24 hours for a replacement or refund.</p>
+        <div class="hero-buttons">
+            <a href="cancellation-refunds.html" class="btn btn-secondary">View Refund Policy</a>
+        </div>
+    </div>
+</section>
+
+<!-- Tracking Section -->
+<section class="about-preview">
+    <div class="container">
+        <div class="tracking-section">
+            <div class="section-header">
+                <h2>Track Your Order</h2>
+                <div class="section-divider"></div>
+            </div>
+            <p style="text-align: center; margin-bottom: var(--spacing-md);">Enter your order number to track delivery status and see estimated arrival time.</p>
+            <form class="tracking-form" onsubmit="trackOrder(event)">
+                <input type="text" class="tracking-input" placeholder="Enter order number (e.g., PM-2025-001234)" aria-label="Order number">
+                <button type="submit" class="tracking-btn">
+                    <i class="fas fa-search"></i> Track Order
+                </button>
+            </form>
+            <div id="tracking-result" style="margin-top: var(--spacing-md); text-align: center;"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Special Instructions Section -->
+<section class="contact-preview">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-content">
+                <div class="section-header left-aligned">
+                    <h2>Important Shipping Information</h2>
+                    <div class="section-divider"></div>
+                </div>
+                
+                <div class="special-instructions">
+                    <h4><i class="fas fa-clock"></i> Order Cut-off Times</h4>
+                    <p>Express delivery orders must be placed before 2:00 PM for next-day delivery. Standard delivery orders can be placed until 6:00 PM for next dispatch.</p>
+                </div>
+                
+                <div class="special-instructions">
+                    <h4><i class="fas fa-snowflake"></i> Temperature Control</h4>
+                    <p>All our mushrooms are shipped in temperature-controlled packaging to maintain freshness during transit. We use specialized insulated containers and ice packs when necessary.</p>
+                </div>
+                
+                <div class="special-instructions">
+                    <h4><i class="fas fa-home"></i> Delivery Instructions</h4>
+                    <p>Please ensure someone is available to receive the delivery. If you're not home, we'll attempt delivery to neighbors or schedule a re-delivery at no extra charge within 24 hours.</p>
+                </div>
+                
+                <h3>Packaging & Handling</h3>
+                <ul class="contact-details">
+                    <li><i class="fas fa-box"></i> Eco-friendly, compostable packaging</li>
+                    <li><i class="fas fa-thermometer-half"></i> Temperature monitoring during transit</li>
+                    <li><i class="fas fa-shield-alt"></i> Shock-resistant packaging for protection</li>
+                    <li><i class="fas fa-tag"></i> Clear labeling with harvest date and storage instructions</li>
+                </ul>
+                
+                <h3>Contact for Shipping Questions</h3>
+                <p>Need help with delivery options or have shipping questions?</p>
+                <ul class="contact-details">
+                    <li><i class="fas fa-envelope"></i> prettymush2025@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> +91 86680 21135</li>
+                    <li><i class="fab fa-whatsapp"></i> WhatsApp: +91 86680 21135</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="product-preview">
+    <div class="container">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <div class="section-divider"></div>
+        </div>
+        
+        <div class="faq-grid">
+            <div class="faq-item" style="background: var(--text-light); padding: var(--spacing-md); border-radius: var(--border-radius); box-shadow: var(--shadow-md); margin-bottom: var(--spacing-md);">
+                <h4><i class="fas fa-question-circle"></i> What if I'm not home during delivery?</h4>
+                <p>Our delivery partner will attempt delivery up to 3 times. If unsuccessful, we'll contact you to arrange an alternative delivery time or location. You can also specify safe drop-off locations.</p>
+            </div>
+            
+            <div class="faq-item" style="background: var(--text-light); padding: var(--spacing-md); border-radius: var(--border-radius); box-shadow: var(--shadow-md); margin-bottom: var(--spacing-md);">
+                <h4><i class="fas fa-question-circle"></i> Can I change my delivery address after ordering?</h4>
+                <p>Address changes are possible until 6 hours before the scheduled delivery. Contact us immediately with your order number and new address details.</p>
+            </div>
+            
+            <div class="faq-item" style="background: var(--text-light); padding: var(--spacing-md); border-radius: var(--border-radius); box-shadow: var(--shadow-md); margin-bottom: var(--spacing-md);">
+                <h4><i class="fas fa-question-circle"></i> Do you deliver on weekends?</h4>
+                <p>Yes, we deliver on Saturdays (9 AM - 2 PM) and Sundays (10 AM - 1 PM) for express delivery in select areas. Sunday delivery may have additional charges.</p>
+            </div>
+            
+            <div class="faq-item" style="background: var(--text-light); padding: var(--spacing-md); border-radius: var(--border-radius); box-shadow: var(--shadow-md); margin-bottom: var(--spacing-md);">
+                <h4><i class="fas fa-question-circle"></i> How do you ensure freshness during shipping?</h4>
+                <p>We harvest fresh daily, package in temperature-controlled containers, and use express shipping methods. Our packaging maintains optimal temperature and humidity for 24-48 hours.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <img src="images/logo.png" alt="Pretty Mush Logo" class="footer-logo">
+                <p>Pretty Fresh, Pretty Healthy</p>
+                <p>Growing premium button mushrooms in the pristine environment of Ooty, Tamil Nadu.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> prettymush2025@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> +91 86680 21135</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 8/75, Mulligoor Village, The Nilgiris, Tamil Nadu, India</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61575984058804" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/prettymush_ooty/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@prettymush_ooty" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Pretty Mush. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<!-- Scripts -->
+<script src="js/main.js"></script>
+<script>
+    function trackOrder(event) {
+        event.preventDefault();
+        const orderNumber = event.target.querySelector('.tracking-input').value.trim();
+        const resultDiv = document.getElementById('tracking-result');
+        
+        if (orderNumber) {
+            // Simulate tracking lookup
+            resultDiv.innerHTML = `
+                <div style="background: var(--text-light); padding: var(--spacing-md); border-radius: var(--border-radius); box-shadow: var(--shadow-md);">
+                    <h4>Order Tracking: ${orderNumber}</h4>
+                    <p><i class="fas fa-check-circle" style="color: var(--success-color);"></i> <strong>Order Confirmed</strong> - ${new Date().toLocaleDateString()}</p>
+                    <p><i class="fas fa-seedling" style="color: var(--primary);"></i> <strong>Harvested Fresh</strong> - Today</p>
+                    <p><i class="fas fa-box" style="color: var(--secondary);"></i> <strong>Packaged</strong> - Ready for pickup</p>
+                    <p><i class="fas fa-truck" style="color: var(--warning-color);"></i> <strong>Out for Delivery</strong> - Expected tomorrow morning</p>
+                    <p style="margin-top: var(--spacing-sm); font-size: 1.4rem; color: var(--gray-dark);">
+                        For real-time updates, we'll send SMS and email notifications.
+                    </p>
+                </div>
+            `;
+        } else {
+            resultDiv.innerHTML = `
+                <div style="background: #fff3cd; color: #856404; padding: var(--spacing-md); border-radius: var(--border-radius); border: 1px solid #ffeaa7;">
+                    <p><i class="fas fa-exclamation-triangle"></i> Please enter a valid order number.</p>
+                </div>
+            `;
+        }
+    }
+</script>
+</body>
+</html>
